@@ -1,0 +1,113 @@
+
+:root {
+   /* colors from: https://colorhunt.co/palette/003865ef5b0cd4f6cc3ccf4e*/
+   --menu-font-color: #000000;
+   --menu-back-color: #8cc5f3;
+   --menu-hover-color: #D4F6CC;
+   --li-hover-color: #7dcafd;
+}
+
+
+header {
+   background-color: var(--menu-back-color);
+   padding: 20px 0;
+   border-bottom: 5px solid var(--menu-font-color);
+}
+
+header img { /* .caixa */
+   width: 100px;
+}
+
+header div {
+   position: relative;
+   width: 80%;
+   margin: 0 auto;
+}
+
+nav {
+   position: absolute;
+   top: 30px;
+   right: 0;
+}
+
+nav li {
+   display: inline;
+   margin: 0 0 0 2em;
+}
+
+nav a {
+   text-transform: uppercase;
+   font-weight: bold;
+   text-decoration: none;
+   font-family: 'Ubuntu Mono', monospace;
+   font-size: 1.5em;
+   color: var(--menu-font-color);
+}
+
+nav a:hover {
+   text-decoration: underline;
+   color: var(--menu-hover-color);
+}
+
+.cursos {
+   width: 80%;
+   margin: 0 auto;
+   padding: 50px 0;
+}
+
+.cursos li {
+   display: inline-block;
+   text-align: center;
+   width: 30%;
+   vertical-align: top;
+   margin: 0 1.5%;
+   padding: 30px 20px;
+   box-sizing: border-box;
+   border: black 2px solid;
+   border-radius: 20px;
+}
+
+.cursos li:hover {
+   border: rgb(0, 0, 0) 2px solid;
+   background-color: var(--li-hover-color);
+}
+
+.cursos li:hover h2 {
+   font-size: 1.3em;
+}
+
+.cursos img {
+   width: 35%;
+}
+
+.cursos h2 {
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 1.2em;
+   font-weight: bold;
+   margin-bottom: 40px;
+}
+
+.curso-descr {
+   font-size: 0.9em;
+   margin-top: 20px;
+}
+
+.curso-hora {
+   font-size: 1em;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin: 10px 0 0;
+}
+
+footer {
+   color: rgb(48, 44, 44);
+   background: rgb(115, 192, 243);
+   height: 100px;
+}
+
+footer p {
+   vertical-align: auto;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 1.2em;
+   font-weight: bold;
+   padding: 20px 10%;
+}
