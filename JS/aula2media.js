@@ -1,16 +1,26 @@
-function Lista(){
-    var elem1 = document.getElementById("num");
+var elem1 = document.getElementById("num");
+var elem2 = document.getElementById("resultado");
+var botaoAdd = document.getElementById("btnAdd");
+var botaoMedia = document.getElementById("btnMed")
+var total = 0;
+var interacao = 0;
+var media = 0;
+
+
+function SomaFatores(){   
 
     var num = elem1.value;
+   
+    var valor = parseInt(num);    
 
-    valor = parseInt(num);
+    total = total + valor;  
+    interacao++;    
 
-    valor = 0;
-    for (let i = 0; i<num.lenght; i++){
-        num=num[i];
-    }
 }
 
-function Media(){
+function Media(){     
+    
+    media = total/interacao;
 
+    elem2.value = media;
 }
