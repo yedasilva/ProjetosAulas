@@ -49,4 +49,5 @@ pets.push(passaro1, tartaruga1);
 
 for (var pet of pets){
     pet.fale();
+    pet.idade;
 }
