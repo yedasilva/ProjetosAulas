@@ -1,3 +1,10 @@
+//Pegar os elementos da tela
+var Resultados = document.getElementById("resultados");
+
+var lista = [];
+
+
+
 
 // Definir uma classe para representar um post
 
