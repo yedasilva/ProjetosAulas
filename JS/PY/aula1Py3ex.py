@@ -1,17 +1,11 @@
-import math
-
 pi = input('Digite um número:')
 print('Voce digitou ', pi)
-i = 0
-seq = 0
 
+pi = int(pi)
 for i in range(0,50):
-    seq =seq + 1
-    s = str(seq)
-    # p = int(pi)
-    # if(seq %pi == 0):
-    #     print ('pi')
-    if(len(seq)-1 == pi):
-    print('pi')
-    print (seq)
+    
+    if (i > 0 and i % pi == 0) or i % 10 == pi:
+        print ("pi")
+    else:
+        print(i)
        
