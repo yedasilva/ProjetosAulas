@@ -1,11 +1,11 @@
 import json
 
-#registro = {}
-REGISTRO = {
-    "Ana": [4,1,6],
-    "Bob": [1,6],
-    "Carl": [2,3,5]
-}
+REGISTRO = {}
+# REGISTRO = {
+#     "Ana": [4,1,6],
+#     "Bob": [1,6],
+#     "Carl": [2,3,5]
+# }
 
 VALORES = []
 
@@ -54,11 +54,12 @@ def total_pedido():
         for num in pedido:
             num = num-1
             total_cli= total + VALORES[num]
+        print ('cliente:', cli, 'R$', total_cli)
 
 
 def total_xsalada():
     contador = 0
-    for nome, ped in registro.items():
+    for nome, ped in REGISTRO.items():
         for nprod in ped:
             if nprod == 1:
                 contador = contador + 1
@@ -68,7 +69,12 @@ def principal():
     for i in range(3):
         fazer_pedido()
 
-    print ('registro:', registro)
+    print ('registro:', REGISTRO)
     
     total_pedido()
     total_xsalada()
+
+def mytest():
+    total_pedido()
+    total_xsalada()
+mytest()
