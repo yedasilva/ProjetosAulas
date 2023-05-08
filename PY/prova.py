@@ -53,7 +53,7 @@ def total_pedido():
         total_cli = 0
         for num in pedido:
             num = num-1
-            total_cli= total + VALORES[num]
+            total_cli= total_cli + VALORES[num]
         print ('cliente:', cli, 'R$', total_cli)
 
 
