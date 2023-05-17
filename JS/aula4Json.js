@@ -20,8 +20,11 @@ class Pessoa {
   var lista = [pessoa1,pessoa2];
   lista.push(pessoa3);
 
-  for (var item of lista){
-    item.saudacao();
+  
+  function Listar(){
+    for (var item of lista){
+      item.saudacao();
+    }
   }
   
   // Criar um objeto JSON com as informações das pessoas
