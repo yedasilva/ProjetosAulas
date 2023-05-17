@@ -1,17 +1,13 @@
 import json
 
 REGISTRO = {}
-# REGISTRO = {
-#     'X-salada': [4, 1, 6], 
-#     'bob': [4, 1], 
-#     'carl': [2, 5, 6]
-# }
+
 
 VALORES = []
 
 
 def carregar_valores():
-    with open('menu-opcoes.json', 'r') as file:
+    with open('PY/menu-opcoes.json', 'r') as file:
         dados = json.load(file)
 
     for chave, valor in dados.items():
@@ -23,7 +19,7 @@ carregar_valores()
 
 def carregar_menu():
     print('\n --- MENU LANCHONETE --- ')
-    with open('menu-opcoes.json', 'r') as file:
+    with open('PY/menu-opcoes.json', 'r') as file:
         dados = json.load(file)
 
     count = 1
