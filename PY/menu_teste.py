@@ -1,11 +1,13 @@
 def menu():
     print('--- MENU OP ----')
-    print('1 - aviao')
-    print('2 - barco')
-    print('3 - submarino')
-    print('4 - pipa')
+    print('1 - X-salada')
+    print('2 - X-bacon')
+    print('3 - coca-colaLata')
+    print('4 - coca-cola600')
+    print('5 - brigadeiro')
+    print('6 - flanMorango')
     print('99 - fim!')
-    op = input('digite op:')
+    op = input('digite op:')    
     op = int(op)
     print('vc digitou:', op)
     return op

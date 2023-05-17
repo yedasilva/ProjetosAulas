@@ -1,25 +1,33 @@
 import json
 
-REGISTRO = {}
+REGISTRO = {}    
+""" {
+    "Xsalada": 25.50, 
+    "Xbacon":28.00,
+    "cocacolaLata": 5.00,
+    "cocacola600": 10.00, 
+    "brigadeiro": 2.50,
+    "FlanMorango": 2.50
+    }               """                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
 
 VALORES = []
 
 
 def carregar_valores():
-    with open('PY/menu-opcoes.json', 'r') as file:
+    with open('PY/menu.json', 'r') as file:
         dados = json.load(file)
 
     for chave, valor in dados.items():
         VALORES.append(valor)
-
+  
 carregar_valores()
 
 
 
 def carregar_menu():
     print('\n --- MENU LANCHONETE --- ')
-    with open('PY/menu-opcoes.json', 'r') as file:
+    with open('PY/menu.json', 'r') as file:
         dados = json.load(file)
 
     count = 1
